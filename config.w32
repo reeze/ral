@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("ral", "for ral support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("ral", "enable ral support", "no");
+
+if (PHP_RAL != "no") {
+	EXTENSION("ral", "ral.c");
+}
+
